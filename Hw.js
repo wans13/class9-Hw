@@ -9,7 +9,7 @@ function abbreviate(array) {
   array.forEach(function (movie) {
     const separateWords = movie.split(" ");
     const abbreviation = separateWords.map(function (word) {
-      return word[0] + ".";
+      return word[0].toUpperCase() + ".";
     });
     console.log(abbreviation.join(""));
   });
